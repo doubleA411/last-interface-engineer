@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ─── Custom Fonts ─────────────────────────────────────────────────── */
+/* Place PPMondwest-Regular.woff2 and PPNeueBit-Bold.woff2 in /public/fonts/ */
+@font-face {
+  font-family: 'PP Mondwest';
+  src: url('/ppmondwest-regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: 'PP NeueBit';
+  src: url('/ppneuebit-bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ─── Design Tokens ────────────────────────────────────────────────── */
+@theme {
+  --font-mondwest: 'PP Mondwest', Georgia, serif;
+  --font-neuebit: 'PP NeueBit', 'Courier New', monospace;
+  --font-dm-sans: var(--font-dm-sans-var), 'DM Sans', sans-serif;
+
+  --color-ink: #1e1e1e;
+  --color-muted: #525252;
+  --color-muted-light: rgba(82, 82, 82, 0.75);
+}
+
+/* ─── Base ─────────────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip; /* clips edge-peeking stickers without creating a scroll container */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: var(--color-ink);
 }
