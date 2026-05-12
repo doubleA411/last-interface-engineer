@@ -21,7 +21,6 @@ export default function Footer() {
   const [count, setCount] = useState<number | null>(null);
 
   useEffect(() => {
-    // Increment once per page load, then display the result
     fetch("/api/visitors", { method: "POST" })
       .then((r) => r.json())
       .then((d) => setCount(d.count))
@@ -31,7 +30,7 @@ export default function Footer() {
   return (
     <footer className="relative overflow-hidden">
       <motion.div
-        className="relative h-[500px] lg:h-[700px]"
+        className="relative h-[300px] sm:h-[500px] lg:h-[700px]"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -44,12 +43,12 @@ export default function Footer() {
         />
       </motion.div>
 
-      <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between px-6 py-4">
-        <p className="font-neuebit text-white/75 text-2xl">COPYRIGHTS 2026</p>
+      <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4">
+        <p className="font-neuebit text-white/75 text-xs sm:text-base lg:text-2xl">COPYRIGHTS 2026</p>
 
         {count !== null && (
           <motion.p
-            className="font-neuebit text-white/60 text-xl"
+            className="font-neuebit text-white/60 text-xs sm:text-sm lg:text-xl"
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", stiffness: 200, damping: 25, delay: 0.3 }}
@@ -58,7 +57,7 @@ export default function Footer() {
           </motion.p>
         )}
 
-        <p className="font-neuebit text-white/75 text-2xl">
+        <p className="font-neuebit text-white/75 text-xs sm:text-base lg:text-2xl text-right">
           DESIGNED &amp; DEVELOPED BY HUMAN
         </p>
       </div>

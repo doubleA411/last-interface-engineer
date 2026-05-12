@@ -30,20 +30,20 @@ export default function ExperienceSection() {
   return (
     <section className="flex flex-col lg:flex-row min-h-screen">
       {/* Left — text */}
-      <div className="flex-1 px-10 lg:px-16 py-20 lg:py-24 flex flex-col justify-start">
-        <motion.p {...fadeUp(0)} className="font-neuebit text-[#525252]/75 text-3xl uppercase tracking-widest mb-6">
+      <div className="flex-1 px-6 sm:px-10 lg:px-16 py-16 lg:py-24 flex flex-col justify-start">
+        <motion.p {...fadeUp(0)} className="font-neuebit text-[#525252]/75 text-base sm:text-xl lg:text-3xl uppercase tracking-widest mb-4 sm:mb-6">
           Experience &amp; Skills
         </motion.p>
 
-        <motion.h2 {...fadeUp(0.08)} className="font-neuebit text-[#525252] text-[clamp(2.5rem,4vw,4rem)] leading-none mb-4">
+        <motion.h2 {...fadeUp(0.08)} className="font-neuebit text-[#525252] text-[clamp(1.75rem,4vw,4rem)] leading-none mb-3 sm:mb-4">
           Shipped. Scaled. Owned.
         </motion.h2>
 
-        <motion.p {...fadeUp(0.14)} className="font-neuebit text-[#525252] text-2xl mb-8">
+        <motion.p {...fadeUp(0.14)} className="font-neuebit text-[#525252] text-sm sm:text-lg lg:text-2xl mb-6 sm:mb-8">
           Fullstack Engineer · SurveySparrow · 2024 – Present
         </motion.p>
 
-        <div className="font-mondwest text-[#1e1e1e] text-xl leading-relaxed space-y-4 mb-12 max-w-lg">
+        <div className="font-mondwest text-[#1e1e1e] text-sm sm:text-base lg:text-xl leading-relaxed space-y-3 sm:space-y-4 mb-8 sm:mb-12 max-w-lg">
           {bullets.map((b, i) => (
             <motion.p key={i} {...fadeUp(0.18 + i * 0.08)}>
               {b}
@@ -52,8 +52,8 @@ export default function ExperienceSection() {
         </div>
 
         <motion.div {...fadeUp(0.6)}>
-          <p className="font-neuebit text-[#525252] text-3xl mb-4">Stack</p>
-          <div className="font-mondwest text-xl space-y-2">
+          <p className="font-neuebit text-[#525252] text-base sm:text-xl lg:text-3xl mb-3 sm:mb-4">Stack</p>
+          <div className="font-mondwest text-sm sm:text-base lg:text-xl space-y-2">
             {stack.map((s, i) => (
               <motion.p key={i} {...fadeUp(0.65 + i * 0.07)}>
                 <span className="text-black">→ {s.label}</span>
@@ -65,7 +65,7 @@ export default function ExperienceSection() {
       </div>
 
       {/* Right — photo */}
-      <div className="flex-1 relative min-h-[400px] lg:min-h-0 overflow-hidden">
+      <div className="flex-1 relative min-h-[300px] sm:min-h-[400px] lg:min-h-0 overflow-hidden">
         <motion.img
           src={ASSETS.experiencePhoto}
           alt=""

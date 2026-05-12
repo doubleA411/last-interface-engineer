@@ -38,15 +38,14 @@ function StickerImg({ s, index }: { s: Sticker; index: number }) {
 
 export default function AboutSection() {
   return (
-    /* overflow-visible so stickers at negative offsets clear the hero boundary */
-    <section className="relative bg-white py-32" style={{ overflow: "visible" }}>
+    <section className="relative bg-white py-16 sm:py-24 lg:py-32" style={{ overflow: "visible" }}>
       {ASSETS.stickers.map((s, i) => (
         <StickerImg key={i} s={s} index={i} />
       ))}
 
-      <div className="max-w-3xl mx-auto px-8 text-center">
+      <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
         <motion.h2
-          className="font-mondwest text-black text-[clamp(2rem,4vw,3rem)] mb-8"
+          className="font-mondwest text-black text-[clamp(1.75rem,4vw,3rem)] mb-6 sm:mb-8"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -56,7 +55,7 @@ export default function AboutSection() {
         </motion.h2>
 
         <motion.p
-          className="font-mondwest text-black text-[clamp(1rem,1.6vw,1.5rem)] leading-relaxed mx-auto max-w-2xl"
+          className="font-mondwest text-black text-[clamp(0.9rem,1.6vw,1.5rem)] leading-relaxed mx-auto max-w-2xl"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

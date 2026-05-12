@@ -11,9 +11,9 @@ const links = [
 
 export default function ContactSection() {
   return (
-    <section className="bg-white py-28 px-8 flex flex-col items-center text-center">
+    <section className="bg-white py-16 sm:py-24 lg:py-28 px-6 sm:px-8 flex flex-col items-center text-center">
       <motion.h2
-        className="font-mondwest text-[#525252] text-[clamp(2rem,4.5vw,4rem)] leading-tight mb-4"
+        className="font-mondwest text-[#525252] text-[clamp(1.5rem,4.5vw,4rem)] leading-tight mb-3 sm:mb-4"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -23,7 +23,7 @@ export default function ContactSection() {
       </motion.h2>
 
       <motion.p
-        className="font-mondwest text-[#525252] text-[clamp(1.1rem,2vw,2rem)] mb-10"
+        className="font-mondwest text-[#525252] text-[clamp(0.9rem,2vw,2rem)] mb-8 sm:mb-10"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -32,14 +32,14 @@ export default function ContactSection() {
         Let&apos;s build something worth shipping.
       </motion.p>
 
-      <div className="flex flex-wrap justify-center gap-x-6 gap-y-3">
+      <div className="flex flex-wrap justify-center gap-x-4 sm:gap-x-6 gap-y-3">
         {links.map((l, i) => (
           <motion.a
             key={l.label}
             href={l.href}
             target={l.href.startsWith("http") ? "_blank" : undefined}
             rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined}
-            className="font-mondwest text-[#525252] text-[clamp(0.85rem,1.4vw,1.75rem)] hover:text-black transition-colors"
+            className="font-mondwest text-[#525252] text-[clamp(0.75rem,1.4vw,1.75rem)] hover:text-black transition-colors"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
