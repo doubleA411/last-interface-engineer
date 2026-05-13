@@ -12,8 +12,8 @@ const bullets = [
 ];
 
 const stack = [
-  { label: "Frontend:", value: "React · Next.js · TypeScript · Node.js" },
-  { label: "Backend:", value: "FastAPI · PostgreSQL · TailwindCSS" },
+  { label: "Frontend:", value: "React · Next.js · TypeScript · TailwindCSS" },
+  { label: "Backend:", value: "FastAPI · PostgreSQL · Node.js · Express.js" },
   { label: "LLM/Agents:", value: "Claude API · Multi-agent · Docker · CI/CD" },
 ];
 
