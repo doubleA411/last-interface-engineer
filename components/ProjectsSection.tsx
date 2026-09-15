@@ -35,7 +35,7 @@ const projects = [
       "Preserves repository context across Cursor and Claude Code using SQLite workspace state and Git diffs.",
     offset: "lg:ml-[5%]",
     links: [
-      { label: "Source", href: "https://github.com/doubleA411/ai-context-sentinal" },
+      { label: "Source", href: "https://github.com/doubleA411/ai-context-sentinel" },
     ],
   },
   {
