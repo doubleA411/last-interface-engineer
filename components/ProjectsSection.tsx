@@ -12,7 +12,7 @@ const projects = [
       "Routes one request to parallel specialist agents with memory, scheduling, and four LLM providers.",
     offset: "lg:ml-[8%]",
     links: [
-      { label: "Live demo", href: "https://agent-flow-lime.vercel.app/landing" },
+      { label: "Product preview", href: "https://agent-flow-lime.vercel.app/landing" },
       { label: "Source", href: "https://github.com/doubleA411/agent-flow" },
     ],
   },
