@@ -39,3 +39,9 @@ body {
   background: #ffffff;
   color: var(--color-ink);
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

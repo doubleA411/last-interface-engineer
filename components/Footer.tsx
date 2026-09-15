@@ -44,7 +44,7 @@ export default function Footer() {
       </motion.div>
 
       <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4">
-        <p className="font-neuebit text-white/75 text-xs sm:text-base lg:text-2xl">COPYRIGHTS 2026</p>
+        <p className="font-neuebit text-white/75 text-xs sm:text-base lg:text-2xl">© 2026 AAKASH SURESH</p>
 
         {count !== null && (
           <motion.p

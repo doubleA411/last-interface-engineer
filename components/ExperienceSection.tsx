@@ -40,7 +40,7 @@ export default function ExperienceSection() {
         </motion.h2>
 
         <motion.p {...fadeUp(0.14)} className="font-neuebit text-[#525252] text-sm sm:text-lg lg:text-2xl mb-6 sm:mb-8">
-          Fullstack Engineer · SurveySparrow · 2024 – Present
+          Full-stack Engineer · SurveySparrow · 2024–Present
         </motion.p>
 
         <div className="font-mondwest text-[#1e1e1e] text-sm sm:text-base lg:text-xl leading-relaxed space-y-3 sm:space-y-4 mb-8 sm:mb-12 max-w-lg">

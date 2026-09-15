@@ -61,7 +61,7 @@ export default function AboutSection() {
           viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 200, damping: 25, delay: 0.15 }}
         >
-          Fullstack engineer — React, Node.js, FastAPI — 2 years shipping at
+          Full-stack engineer — React, Node.js, FastAPI — 2+ years shipping at
           scale. Now building AI agents, orchestration systems, and the
           interfaces that control them.
         </motion.p>

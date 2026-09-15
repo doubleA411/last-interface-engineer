@@ -11,11 +11,11 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "The Last Interface Engineer — Aakash Suresh",
   description:
-    "Fullstack Engineer building AI agents, orchestration systems, and the interfaces that control them.",
+    "Full-stack engineer building AI agents, orchestration systems, and the interfaces that control them.",
   openGraph: {
     title: "The Last Interface Engineer — Aakash Suresh",
     description:
-      "Fullstack Engineer building AI agents, orchestration systems, and the interfaces that control them.",
+      "Full-stack engineer building AI agents, orchestration systems, and the interfaces that control them.",
     images: [
       {
         url: "https://res.cloudinary.com/dolxoxj41/image/upload/v1778622769/man_yyb6mk.jpg",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Last Interface Engineer — Aakash Suresh",
     description:
-      "Fullstack Engineer building AI agents, orchestration systems, and the interfaces that control them.",
+      "Full-stack engineer building AI agents, orchestration systems, and the interfaces that control them.",
     images: ["https://res.cloudinary.com/dolxoxj41/image/upload/v1778622769/man_yyb6mk.jpg"],
   },
 };
