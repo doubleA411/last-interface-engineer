@@ -39,13 +39,17 @@ export default function ExperienceSection() {
           Shipped. Scaled. Owned.
         </motion.h2>
 
-        <motion.p {...fadeUp(0.14)} className="font-neuebit text-[#525252] text-sm sm:text-lg lg:text-2xl mb-6 sm:mb-8">
-          Full-stack Engineer · SurveySparrow · 2024–Present
+        <motion.p {...fadeUp(0.14)} className="font-neuebit text-[#292929] text-base sm:text-xl lg:text-3xl mb-2">
+          Software Engineer · TechFnatic · 2026–Present
+        </motion.p>
+
+        <motion.p {...fadeUp(0.18)} className="font-neuebit text-[#525252] text-sm sm:text-lg lg:text-2xl mb-6 sm:mb-8">
+          Selected impact · SurveySparrow · 2024–2026
         </motion.p>
 
         <div className="font-mondwest text-[#1e1e1e] text-sm sm:text-base lg:text-xl leading-relaxed space-y-3 sm:space-y-4 mb-8 sm:mb-12 max-w-lg">
           {bullets.map((b, i) => (
-            <motion.p key={i} {...fadeUp(0.18 + i * 0.08)}>
+            <motion.p key={i} {...fadeUp(0.22 + i * 0.08)}>
               {b}
             </motion.p>
           ))}
